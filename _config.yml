@@ -23,9 +23,7 @@ favicon_ico: "/assets/images/favicon.ico"
 # theme: "just-the-docs"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: wapi
-# theme: minima
-plugins:
-  - jekyll-feed
+
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
