@@ -1,6 +1,6 @@
 title: WapiFirma Documentacion
 description: Sitio de documentacion para WapiFirma
-theme: just-the-docs
+theme: wapi
 
 
 url: https://wapifi-firma.github.io
@@ -17,5 +17,3 @@ favicon_ico: "/assets/images/favicon.ico"
 
 ##Sidebar##
 nav_enabled: true
-
-color_scheme: wapi
