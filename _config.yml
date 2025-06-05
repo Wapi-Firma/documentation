@@ -1,8 +1,21 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: WapiFirma Documentacion
+description: Sitio de documentacion para WapiFirma
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+
+url: https://wapifi-firma.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  App WapiFirma: https://app.wapifirma.com
+
+
+##Branding##
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/favicon.ico"
+
+
+
+##Sidebar##
+nav_enabled: true
+
+color_scheme: wapifi
