@@ -45,6 +45,8 @@ $grey-lt-100: #eeebee !default;
 $grey-lt-200: #ecebed !default;
 $grey-lt-300: #e6e1e8 !default;
 
+$cream-wapi: #f9f1e6 !default;
+
 $purple-000: #7253ed !default;
 $purple-100: #5e41d0 !default;
 $purple-200: #4e26af !default;
@@ -60,6 +62,9 @@ $green-100: #11b584 !default;
 $green-200: #009c7b !default;
 $green-300: #026e57 !default;
 
+$green-wapi-1: #2a6465 !default;
+$green-wapi-2: #4ba589 !default;
+
 $yellow-000: #ffeb82 !default;
 $yellow-100: #fadf50 !default;
 $yellow-200: #f7d12e !default;
@@ -71,7 +76,7 @@ $red-200: #e94c4c !default;
 $red-300: #dd2e2e !default;
 
 $body-background-color: $white !default; //EX: To make red, replace `$body-background-color: $white !default;` ... with... `$red-000: #f77e7e;`
-$sidebar-color: $grey-lt-100;
+$sidebar-color: $cream-wapi;
 $search-background-color: $white !default;
 $table-background-color: $white !default;
 $code-background-color: $grey-lt-000 !default;
@@ -81,7 +86,7 @@ $body-text-color: $grey-dk-200 !default;
 $body-heading-color: $grey-dk-300 !default;
 $search-result-preview-color: $grey-dk-000 !default;
 $nav-child-link-color: $grey-dk-100 !default;
-$link-color: $red-100;
+$link-color: $green-wapi-1;
 $btn-primary-color: $grey-dk-250;
 $base-button-color: $grey-dk-300 !default;
 
