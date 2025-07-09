@@ -3,15 +3,16 @@ description: Sitio de documentacion para WapiFirma
 email: hola@wapifirma.com
 
 url: "https://wapifirma.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
 repository: wapi-firma/documentation # for github-metadata
 
-twitter_username: openfn
-github_username:  openfn
 aux_links:
   "App Wapifirma":
     - "//app.wapifirma.com/"
     
-
+defaults:
+    values:
+      layout: "home"
 
 logo: "/assets/images/logo.png"
 favicon_ico: "/assets/images/favicon.ico"
