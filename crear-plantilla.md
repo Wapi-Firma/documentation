@@ -32,10 +32,13 @@ De esta forma, podés aplicar ese mismo flujo a documentos similares en el futur
 
 ### 🤝 ¿Cómo utilizar una plantilla guardada?
 
+![alt text](<assets/images/crear-plantilla/usar-plantilla.png>)
+
 Una vez creada la plantilla:
 
 - Al iniciar un nuevo documento, luego de cargar los firmantes podés **seleccionar la plantilla** en lugar de configurar todo desde cero.
 - El flujo de firmantes, posiciones y configuraciones se aplican automáticamente, agilizando la carga y configuración del documento futuro.
+
 
 ---
 
