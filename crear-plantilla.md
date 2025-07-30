@@ -5,9 +5,9 @@ nav_order: 2
 description: "Guarda una plantilla para reutilizar en el futuro"
 ---
 
-## 🗂️ Crear plantillas de firma
+#  Crear plantillas de firma
 
-### ¿Qué es una plantilla?
+## ¿Qué es una plantilla?
 
 Una plantilla de firma es una configuración reutilizable para un documento determinado que:
 
@@ -19,7 +19,7 @@ De esta forma, podés aplicar ese mismo flujo a documentos similares en el futur
 
 ---
 
-### ✅ ¿Cómo crear una plantilla desde la app?
+## ✅ ¿Cómo crear una plantilla desde la app?
 
 1. Ir a **Crear documento**.  
 2. Establecer la **cantidad de firmantes** que tendrá la plantilla.  
@@ -30,7 +30,7 @@ De esta forma, podés aplicar ese mismo flujo a documentos similares en el futur
 
 ---
 
-### 🤝 ¿Cómo utilizar una plantilla guardada?
+## 🤝 ¿Cómo utilizar una plantilla guardada?
 
 ![alt text](<assets/images/crear-plantilla/usar-plantilla.png>)
 
@@ -42,7 +42,7 @@ Una vez creada la plantilla:
 
 ---
 
-### 🧠 Ventajas
+## 🧠 Ventajas
 
 - **Ahorro de tiempo**: no es necesario repetir configuraciones manualmente.  
 - **Consistencia y precisión**: las configuraciones se mantienen exactas en cada uso.  
@@ -50,7 +50,7 @@ Una vez creada la plantilla:
 
 ---
 
-### 📂 Recomendaciones
+## 📂 Recomendaciones
 
 - Usa nombres claros y descriptivos para tu plantilla, por ejemplo: `Contrato–2firmantes–validaciónDNI`.  
 - Si cambian requisitos (por ejemplo, que se firme en cada hoja o se agregue otro firmante), **crea nuevas versiones** en lugar de modificar las anteriores.  
