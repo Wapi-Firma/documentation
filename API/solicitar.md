@@ -13,7 +13,7 @@ Solicita el envío de un documento a firmar.
 
 ## Attributes
 - ### Document Settings - Object
-  - **campaign_id (number, required)**  - The ID of the campaign to associate the document with.
+  - **campaign_id (number, required)**  -The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
   - **document (string, required)**  - The public URL or B64 of the document to be signed.
   - **firma_en_todas_las_hojas (boolean, optional)**  - If `true`, the signature will be applied to all pages of the document. Default is `False`.
   - **document_name (string, optional)**  - The name of the document. Default is `Wapi firma document`.
