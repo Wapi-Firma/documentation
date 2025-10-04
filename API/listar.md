@@ -25,6 +25,7 @@ Content-Type: application/json
 * `start_date` / `end_date`: Timestamp UNIX para filtrar por fecha.
 * `label`: Filtra por etiqueta.
 * `is_finished`: Filtra por estado (true = firmado, false = pendiente).
+* `not_signed`: Filtra documentos rechazados por los firmantes (true = mostrar solo documentos rechazados, false = mostrar todos).
 
 ## Respuesta
 
@@ -39,6 +40,8 @@ Content-Type: application/json
     "cantidad_firmados": 0,
     "created_at": 1736997551,
     "client": "custom-api",
+    "requested_at": "2025-10-03T19:02:50.665Z",
+    "rejected": false,
     "firmantes": [
       {
         "name": "Luis Lacoste",
@@ -47,7 +50,7 @@ Content-Type: application/json
         "phone": "5493586005012",
         "method": "wpp",
         "id_custom": "22CC93E5965F48D5BD22C06BE4B7A36D",
-        "link": "https://firma.wapifirma.com/?rd=22CC93E5965F48D5BD22C06BE4B7A36D",
+        "link": "https://firma.wapifirma.com/rd/22CC93E5965F48D5BD22C06BE4B7A36D",
         "delivered": true
       },
       {
@@ -57,7 +60,7 @@ Content-Type: application/json
         "phone": "5493586005013",
         "method": "wpp",
         "id_custom": "22CC93E5965F48D5BD22C06BE4B7A36D_2",
-        "link": "https://firma.wapifirma.com/?rd=22CC93E5965F48D5BD22C06BE4B7A36D_2",
+        "link": "https://firma.wapifirma.com/rd/22CC93E5965F48D5BD22C06BE4B7A36D_2",
         "delivered": false
       }
     ],
