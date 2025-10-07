@@ -17,13 +17,16 @@ Solicita el envío de un documento a firmar.
   - **document (string, required)**  - The public URL or B64 of the document to be signed.
   - **firma_en_todas_las_hojas (boolean, optional)**  - If `true`, the signature will be applied to all pages of the document. Default is `False`.
   - **document_name (string, optional)**  - The name of the document. Default is `Wapi firma document`.
-  - **dni_validation (boolean, optional)**  - Indicates whether to validate the DNI of signers. Default is `False`.
-  - **request_photos (boolean, optional)**  - Indicate whether to ask for photo selfie of signrer. Default is `False`.
+  - **request_photos (boolean, optional)**  - Solicita fotos durante el flujo de firma. Para usuarios del plan Wapi Pro, se utilizará Verificación de Identidad Avanzada. Default is `False`.
   - **custom_parameters (object, optional)**  -  A flexible field for custom metadata related to the document. Default is `null`.
 - ### Communication - Object
   - **webhook_url (string, optional):** The webhook URL to send a callback when the signing process is complete.
+    - **Types of webhooks:** There are three types of webhook notifications:
+      - **alert** - Te avisa que ya se terminó de firmar el documento
+      - **report** - Te avisa que se terminó de generar el reporte
+      - **whatsapp** - Te avisa que no se pudo entregar un documento al WhatsApp del firmante
     - Body: The structure of the callback payload.
-      - Example
+      - Example (alert type)
         ```json
         {
           "type": "alert",
@@ -105,7 +108,7 @@ Content-Type: application/json
   "created_at": 1736996142,
   "urls": [
     {
-      "link": "https://firma.wapifirma.com/?rd=F5384BECE0574D809CC129F90C90253B",
+      "link": "https://firma.wapifirma.com/rd/F5384BECE0574D809CC129F90C90253B",
       "name": "Luis Lacoste",
       "dni": "43795269",
       "contact": "5493586005012",
