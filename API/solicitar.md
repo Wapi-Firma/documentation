@@ -13,11 +13,12 @@ Solicita el envío de un documento a firmar.
 
 ## Attributes
 - ### Document Settings - Object
-  - **campaign_id (number, optional)**  -The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
+  - **campaign_id (number, optional)**  - The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
   - **document (string, required)**  - The public URL or B64 of the document to be signed.
   - **firma_en_todas_las_hojas (boolean, optional)**  - If `true`, the signature will be applied to all pages of the document. Default is `False`.
   - **document_name (string, optional)**  - The name of the document. Default is `Wapi firma document`.
   - **request_photos (boolean, optional)**  - Solicita fotos durante el flujo de firma. Para usuarios del plan Wapi Pro, se utilizará Verificación de Identidad Avanzada. Default is `False`.
+  - **dni_validation (boolean, optional)**  - If `true`, the signer's DNI will be validated during the signing process. Default is `True`. (Note: This feature is only available for Wapi Pro plan users.)
   - **custom_parameters (object, optional)**  -  A flexible field for custom metadata related to the document. Default is `null`.
 - ### Communication - Object
   - **webhook_url (string, optional):** The webhook URL to send a callback when the signing process is complete.
