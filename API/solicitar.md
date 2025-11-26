@@ -13,21 +13,21 @@ Solicita el envío de un documento a firmar.
 
 ## Attributes
 - ### Document Settings - Object
-  - **campaign_id (number, optional)**  - The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
-  - **document (string, required)**  - The public URL or B64 of the document to be signed.
-  - **firma_en_todas_las_hojas (boolean, optional)**  - If `true`, the signature will be applied to all pages of the document. Default is `False`.
-  - **document_name (string, optional)**  - The name of the document. Default is `Wapi firma document`.
-  - **request_photos (boolean, optional)**  - Solicita fotos durante el flujo de firma. Para usuarios del plan Wapi Pro, se utilizará Verificación de Identidad Avanzada. Default is `False`.
-  - **dni_validation (boolean, optional)**  - If `true`, the signer's DNI will be validated during the signing process. Default is `True`. (Note: This feature is only available for Wapi Pro plan users.)
-  - **custom_parameters (object, optional)**  -  A flexible field for custom metadata related to the document. Default is `null`.
+  - **campaign_id (number, optional)**  - El ID de la campaña (plantilla) asociada al documento. Para usar este campo, primero debés [crear una plantilla de firma]({% link crear-plantilla.md %}) en la app. Luego, contactá al equipo de Wapi para solicitar el ID de campaña vinculado a esa plantilla.
+  - **document (string, required)**  - La URL pública o el documento en Base64 que se va a firmar.
+  - **firma_en_todas_las_hojas (boolean, optional)**  - Si es `true`, la firma se aplicará en todas las páginas del documento. El valor por defecto es `False`.
+  - **document_name (string, optional)**  - El nombre del documento. El valor por defecto es `Wapi firma document`.
+  - **request_photos (boolean, optional)**  - Solicita fotos durante el flujo de firma. El valor por defecto es `False`.
+  - **dni_validation (boolean, optional)**  - Si es `true`, se validará el DNI del firmante durante el proceso de firma. El valor por defecto es `True`. (Nota: Esta función solo está disponible para usuarios del plan Wapi Pro.)
+  - **custom_parameters (object, optional)**  -  Un campo flexible para metadatos personalizados relacionados con el documento. El valor por defecto es `null`.
 - ### Communication - Object
-  - **webhook_url (string, optional):** The webhook URL to send a callback when the signing process is complete.
-    - **Types of webhooks:** There are three types of webhook notifications:
+  - **webhook_url (string, optional):** La URL del webhook para enviar una notificación cuando el proceso de firma esté completo.
+    - **Tipos de webhooks:** Hay tres tipos de notificaciones webhook:
       - **alert** - Te avisa que ya se terminó de firmar el documento
       - **report** - Te avisa que se terminó de generar el reporte
       - **whatsapp** - Te avisa que no se pudo entregar un documento al WhatsApp del firmante
-    - Body: The structure of the callback payload.
-      - Example (alert type)
+    - Body: La estructura del payload del callback.
+      - Ejemplo (tipo alert)
         ```json
         {
           "type": "alert",
@@ -44,23 +44,23 @@ Solicita el envío de un documento a firmar.
           }
         }
         ```
-  - **webhook_key (object, optional):** The key-value pair for the webhook URL, if needed.
-      - Example
+  - **webhook_key (object, optional):** El par clave-valor para la URL del webhook, si es necesario.
+      - Ejemplo
         ```json
         {
           "key": "value"
         }
         ```
-  - **wpp (boolean, optional):** Indicates if a WhatsApp notification should be sent to the signer. Default is `True`.
+  - **wpp (boolean, optional):** Indica si se debe enviar una notificación de WhatsApp al firmante. El valor por defecto es `True`.
 
-### datos_firmantes (array[], required) - The array of signers. Each object contains:
-+ name (string, required) - The name of the signer.
-+ dni (string, required) - The DNI of the signer.
-+ phone (string, required) - The phone number of the signer.
-+ position (string, optional) -  The signing order or position within the document (used to determine placement).
-+ position_x (number, optional) - The X coordinate for the signature placement (in pixels).
-+ position_y (number, optional) - The Y coordinate for the signature placement (in pixels).
-+ page (number, optional) - The page number where the signature should be placed (starting from 1).
+### datos_firmantes (array[], required) - El arreglo de firmantes. Cada objeto contiene:
++ name (string, required) - El nombre del firmante.
++ dni (string, required) - El DNI del firmante.
++ phone (string, required) - El número de teléfono del firmante.
++ position (string, optional) -  El orden o posición de firma dentro del documento (se usa para determinar la ubicación).
++ position_x (number, optional) - La coordenada X para la ubicación de la firma (en píxeles).
++ position_y (number, optional) - La coordenada Y para la ubicación de la firma (en píxeles).
++ page (number, optional) - El número de página donde se debe colocar la firma (comenzando desde 1).
 ## Headers
 
 ```
