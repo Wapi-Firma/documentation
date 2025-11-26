@@ -6,7 +6,7 @@ nav_order: 6
 description: "Actualiza el nombre comercial que verán los firmantes en WhatsApp."
 ---
 
-# PUT /api/account/changeBusinessName
+# 🏢 Cambiar Nombre Comercial
 
 Actualiza el nombre comercial que verán los firmantes cuando reciban el mensaje de WhatsApp para firmar. Este valor se muestra al firmante como remitente/identificador de la organización que solicita la firma.
 
@@ -19,8 +19,6 @@ Actualiza el nombre comercial que verán los firmantes cuando reciban el mensaje
 Content-Type: application/json
 x-api-key: your-api-key-here
 ```
-
-> Nota: Este endpoint requiere una `x-api-key` válida. La validación se realiza en el middleware `apiKeyValidation`.
 
 ## Body (ejemplo)
 
