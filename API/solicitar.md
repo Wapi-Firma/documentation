@@ -18,7 +18,7 @@ Solicita el envío de un documento a firmar.
   - **firma_en_todas_las_hojas (boolean, optional)**  - Si es `true`, la firma se aplicará en todas las páginas del documento. El valor por defecto es `False`.
   - **document_name (string, optional)**  - El nombre del documento. El valor por defecto es `Wapi firma document`.
   - **request_photos (boolean, optional)**  - Solicita fotos durante el flujo de firma. El valor por defecto es `False`.
-  - **dni_validation (boolean, optional)**  - Si es `true`, se validará el DNI del firmante durante el proceso de firma. El valor por defecto es `True`. (Nota: Esta función solo está disponible para usuarios del plan Wapi Pro.)
+  - **validate_photos (boolean, optional)**  - Si es `true`, se validará el DNI del firmante durante el proceso de firma. El valor por defecto es `True`. (Nota: Esta función solo está disponible para usuarios del plan Wapi Pro.)
   - **custom_parameters (object, optional)**  -  Un campo flexible para metadatos personalizados relacionados con el documento. El valor por defecto es `null`.
 - ### Communication - Object
   - **webhook_url (string, optional):** La URL del webhook para enviar una notificación cuando el proceso de firma esté completo.
@@ -75,7 +75,7 @@ Content-Type: application/json
   "document": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
   "firma_en_todas_las_hojas": true,
   "document_name": "dummy",
-  "dni_validation": true,
+  "validate_photos": true,
   "request_photos": true,
   "custom_parameters": {
     "poliza": 210,
