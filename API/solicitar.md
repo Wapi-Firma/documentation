@@ -13,7 +13,7 @@ Solicita el envío de un documento a firmar.
 
 ## Attributes
 - ### Document Settings - Object
-  - **campaign_id (number, optional)**  - El ID de la campaña (plantilla) asociada al documento. Para usar este campo, primero debés [crear una plantilla de firma]({% link crear-plantilla.md %}) en la app. Luego, contactá al equipo de Wapi para solicitar el ID de campaña vinculado a esa plantilla.
+  - **campaign_id (integer, optional)**  - El ID de la campaña (plantilla) asociada al documento. Para usar este campo, primero debés [crear una plantilla de firma]({% link crear-plantilla.md %}) en la app. Luego, contactá al equipo de Wapi para solicitar el ID de campaña vinculado a esa plantilla.
   - **document (string, required)**  - La URL pública o el documento en Base64 que se va a firmar.
   - **firma_en_todas_las_hojas (boolean, optional)**  - Si es `true`, la firma se aplicará en todas las páginas del documento. El valor por defecto es `False`.
   - **document_name (string, optional)**  - El nombre del documento. El valor por defecto es `Wapi firma document`.
@@ -58,9 +58,9 @@ Solicita el envío de un documento a firmar.
 + dni (string, required) - El DNI del firmante.
 + phone (string, required) - El número de teléfono del firmante.
 + position (string, optional) -  El orden o posición de firma dentro del documento (se usa para determinar la ubicación).
-+ position_x (number, optional) - La coordenada X para la ubicación de la firma (en píxeles).
-+ position_y (number, optional) - La coordenada Y para la ubicación de la firma (en píxeles).
-+ page (number, optional) - El número de página donde se debe colocar la firma (comenzando desde 1).
++ position_x (integer, optional) - La coordenada X para la ubicación de la firma (en píxeles).
++ position_y (integer, optional) - La coordenada Y para la ubicación de la firma (en píxeles).
++ page (integer, optional) - El número de página donde se debe colocar la firma (comenzando desde 1).
 ## Headers
 
 ```
