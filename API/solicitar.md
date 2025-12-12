@@ -13,7 +13,7 @@ Solicita el envío de un documento a firmar.
 
 ## Attributes
 - ### Document Settings - Object
-  - **campaign_id (number, optional)**  -The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
+  - **campaign_id (integer, optional)**  -The ID of the campaign (template) associated with the document. To use this field, you must first [create a signing template]({% link crear-plantilla.md %}) (plantilla) in the app. Then, contact the Wapi team to request the campaign ID linked to that template.
   - **document (string, required)**  - The public URL or B64 of the document to be signed.
   - **firma_en_todas_las_hojas (boolean, optional)**  - If `true`, the signature will be applied to all pages of the document. Default is `False`.
   - **document_name (string, optional)**  - The name of the document. Default is `Wapi firma document`.
@@ -57,9 +57,9 @@ Solicita el envío de un documento a firmar.
 + dni (string, required) - The DNI of the signer.
 + phone (string, required) - The phone number of the signer.
 + position (string, optional) -  The signing order or position within the document (used to determine placement).
-+ position_x (number, optional) - The X coordinate for the signature placement (in pixels).
-+ position_y (number, optional) - The Y coordinate for the signature placement (in pixels).
-+ page (number, optional) - The page number where the signature should be placed (starting from 1).
++ position_x (integer, optional) - The X coordinate for the signature placement (in pixels).
++ position_y (integer, optional) - The Y coordinate for the signature placement (in pixels).
++ page (integer, optional) - The page number where the signature should be placed (starting from 1).
 ## Headers
 
 ```
