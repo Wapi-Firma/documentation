@@ -57,7 +57,7 @@ Solicita el envío de un documento a firmar.
 + name (string, required) - El nombre del firmante.
 + dni (string, required) - El DNI del firmante.
 + phone (string, required) - El número de teléfono del firmante.
-+ position (string, optional) -  El orden o posición de firma dentro del documento (se usa para determinar la ubicación).
++ position (integer, optional) -  El orden o posición de firma dentro del documento (se usa para determinar la ubicación).
 + position_x (integer, optional) - La coordenada X para la ubicación de la firma (en píxeles).
 + position_y (integer, optional) - La coordenada Y para la ubicación de la firma (en píxeles).
 + page (integer, optional) - El número de página donde se debe colocar la firma (comenzando desde 1).
