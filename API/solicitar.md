@@ -93,9 +93,9 @@ Content-Type: application/json
     "wpp": true,
     "datos_firmantes": [
         {
-            "name": "Luis Lacoste",
+            "name": "Leandro Martinez",
             "dni": "43795269",
-            "phone": "5493586005012",
+            "phone": "5491122334455",
             "position": 1
         },
         {
@@ -117,9 +117,9 @@ Content-Type: application/json
     "urls": [
         {
             "link": "https://firma.wapifirma.com/rd/F5384BECE0574D809CC129F90C90253B",
-            "name": "Luis Lacoste",
+            "name": "Leandro Martinez",
             "dni": "43795269",
-            "contact": "5493586005012",
+            "contact": "5491122334455",
             "method": "wpp",
             "id_custom": "F5384BECE0574D809CC129F90C90253B"
         }
